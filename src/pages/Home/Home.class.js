@@ -1,7 +1,8 @@
 import { Component } from "react";
+import Counter from "../../component/Counter";
 /**
  * State - State is mutable
- * 
+ * Props - Props is immutable
  **/
 class Home extends Component {
   constructor() {
@@ -15,7 +16,13 @@ class Home extends Component {
   render() {
     console.log("Render is called");
     return (
-      <p>Counter value - {this.state.counter}</p>
+      <div>
+        <center>
+          <p>Counter value - </p>
+          <Counter counterValue={this.state.counter} />
+        </center>
+      </div>
+
     )
   }
   componentDidMount() {

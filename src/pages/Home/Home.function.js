@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Counter from "../../component/Counter";
 const Home = () => {
 	const [counter, setCounter] = useState(0);
 	useEffect(() => {
@@ -12,8 +13,16 @@ const Home = () => {
 	});
 	// optional parameter is called as a dependency array
 	console.log("Returning the UI Element");
+	const settingCounter = () => {
+		console.log("settingCounter is called " );
+		setCounter(counter + 1)
+	}
 	return (
-		<p onClick={() => setCounter(counter + 1)}>Counter value - {counter}</p>
+		<div>
+			<center>
+			<Counter counterValue={counter} setCounter={settingCounter} />
+			</center>
+		</div>
 	)
 }
 export default Home;
