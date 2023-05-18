@@ -20,6 +20,7 @@ const Home = () => {
 	}
 	const onChangeText = (e) => {
 		console.log("onChangeText is called", e.nativeEvent.target.value);
+		// Using e.nativeEvent.target.value we receive the value change of input text.
 		setUserInput(e.nativeEvent.target.value);
 	}
 	return (
