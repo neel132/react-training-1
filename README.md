@@ -8,3 +8,21 @@
 7. useState
 8. useEffect
 9. Conditional Rendering
+
+### Styling in ReactJS
+1. Using .css files
+2. Using .js files (mainly for inline styles)
+3. Using css frameworks (e.g. tailwind, bootstrap, material-ui, etc)
+
+# Steps to install Tailwind
+1. npm install -D tailwindcss postcss autoprefixer (-D represents dev dependencies in package.json)
+2. npx tailwindcss init
+3. Add the following to your index.css - 
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+4. npm start
+Note - 
+Reference to tailwind documentation for styling - https://tailwindcss.com/docs/container.

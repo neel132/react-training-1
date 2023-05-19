@@ -27,7 +27,7 @@ const Home = () => {
 		setUserInput(e.nativeEvent.target.value);
 	}
 	return (
-		<div style={styles.container}>
+		<div class="flex bg-cyan-400 h-screen">
 			<div style={counter % 2 === 0 ? styles.containerForEven : styles.containerForOdd}>
 					<Counter counterValue={counter} setCounter={settingCounter} />
 					<input type="textarea" placeholder="Counter input" value={userInput} onChange={(e) => onChangeText(e)} />

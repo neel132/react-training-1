@@ -5,14 +5,14 @@ const styles = {
     minHeight: '100vh',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'antiquewhite',
+    // backgroundColor: 'antiquewhite',
   },
   containerForEven: {
-    backgroundColor: "blue",
+    // backgroundColor: "blue",
     padding: '2%',
   },
   containerForOdd: {
-    backgroundColor: "orange",
+    // backgroundColor: "orange",
     padding: 20,
   }
 };
