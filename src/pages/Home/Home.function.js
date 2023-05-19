@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 import Counter from "../../component/Counter";
+import "./Home.css";
+import styles from "./Home.style";
+
 const Home = () => {
 	const [counter, setCounter] = useState(0);
 	const [userInput, setUserInput] = useState('');
@@ -24,11 +27,11 @@ const Home = () => {
 		setUserInput(e.nativeEvent.target.value);
 	}
 	return (
-		<div>
-			<center>
-			<Counter counterValue={counter} setCounter={settingCounter} />
-			<input type="textarea" placeholder="Counter input" value={userInput} onChange={(e) => onChangeText(e)} />
-			</center>
+		<div style={styles.container}>
+			<div style={counter % 2 === 0 ? styles.containerForEven : styles.containerForOdd}>
+					<Counter counterValue={counter} setCounter={settingCounter} />
+					<input type="textarea" placeholder="Counter input" value={userInput} onChange={(e) => onChangeText(e)} />
+			</div>
 		</div>
 	)
 }
