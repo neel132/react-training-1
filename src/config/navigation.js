@@ -4,7 +4,7 @@ import Profile from "../pages/Profile/Profile";
 
 const keys = {
   root: '/',
-  profile: '/profile',
+  profile: '/profile/:id',
 };
 
 const router = createBrowserRouter([
