@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
 import Counter from "../../component/Counter";
 import "./Home.css";
 import styles from "./Home.style";
+import { keys } from "../../config/navigation";
 
 const Home = () => {
 	const [counter, setCounter] = useState(0);
 	const [userInput, setUserInput] = useState('');
+	const navigate = useNavigate();
 	useEffect(() => {
 		// useEffect is as same as componentDidMount, but it has other features as well
 		console.log("Use Effect hook is called");
@@ -26,11 +29,15 @@ const Home = () => {
 		// Using e.nativeEvent.target.value we receive the value change of input text.
 		setUserInput(e.nativeEvent.target.value);
 	}
+	const navigateToProfile = () => {
+		navigate(keys.profile);
+	}
 	return (
 		<div class="flex bg-cyan-400 h-screen">
 			<div style={counter % 2 === 0 ? styles.containerForEven : styles.containerForOdd}>
 					<Counter counterValue={counter} setCounter={settingCounter} />
 					<input type="textarea" placeholder="Counter input" value={userInput} onChange={(e) => onChangeText(e)} />
+					<p onClick={() => navigateToProfile()}>Navigate To profile</p>
 			</div>
 		</div>
 	)
