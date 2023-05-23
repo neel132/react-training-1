@@ -32,3 +32,19 @@ Reference to tailwind documentation for styling - https://tailwindcss.com/docs/c
 npm install react-router-dom localforage match-sorter sort-by
 ```
 2. Refer this example to configure - https://reactrouter.com/en/main/start/tutorial#adding-a-router
+
+### Global State Management using Redux
+Terminology -
+1. Store
+2. InitialState
+3. Slice - Reducers & Actions
+4. Hooks - useSelector & useDispatch
+
+Steps to setup - 
+1. First we need to create a slice.
+2. Inside the slice we need to have unique name
+3. Inside the slice we need to have initialState
+4. Action functions inside the reducer key.
+5. Configure the reducer with store.
+6. Passing the store to Provider which wraps your project. Also termed as High Order Component.
+7. Now, Inside the component you can read the redux state value via useSelector hook and you can call the action to modify the state via useDispatch hook.
