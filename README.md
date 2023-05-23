@@ -34,6 +34,10 @@ npm install react-router-dom localforage match-sorter sort-by
 2. Refer this example to configure - https://reactrouter.com/en/main/start/tutorial#adding-a-router
 
 ### Global State Management using Redux
+Installation steps - 
+```
+npm install @reduxjs/toolkit react-redux
+```
 Terminology -
 1. Store
 2. InitialState
