@@ -52,3 +52,13 @@ Steps to setup -
 5. Configure the reducer with store.
 6. Passing the store to Provider which wraps your project. Also termed as High Order Component.
 7. Now, Inside the component you can read the redux state value via useSelector hook and you can call the action to modify the state via useDispatch hook.
+
+Persisting the redux state using redux-persist - 
+1. Install the library 
+```
+npm install redux-persist
+```
+2. Modify the store with persisted Reducer as mentioned in store.js file
+3. Export the persistor along with the store
+4. In App.js Below Provider add PersistGate Component with persistor as a prop
+5. Re-run the project, and redux state will be persisted in localstorage of the browser.
