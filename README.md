@@ -62,3 +62,12 @@ npm install redux-persist
 3. Export the persistor along with the store
 4. In App.js Below Provider add PersistGate Component with persistor as a prop
 5. Re-run the project, and redux state will be persisted in localstorage of the browser.
+
+### Network calls in React using axios
+1. Install the axios library -
+```
+npm i axios
+```
+2. Add the axios configuration with it's instance inside config folder as mentioned.
+3. Add the request & response interceptors for axios instance (Reference - https://axios-http.com/docs/interceptors)
+4. Use this instance across the project for crud operations.
