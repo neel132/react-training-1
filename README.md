@@ -71,3 +71,14 @@ npm i axios
 2. Add the axios configuration with it's instance inside config folder as mentioned.
 3. Add the request & response interceptors for axios instance (Reference - https://axios-http.com/docs/interceptors)
 4. Use this instance across the project for crud operations.
+
+Using Middleware - redux-saga (https://redux-saga.js.org/)
+1. Install the saga library -
+```
+npm i redux-saga
+```
+2. Configure the store with middleware as mentioned in store.js file
+3. Create saga folder inside redux folder, where you maintain all saga files
+4. Create actions related to saga, eg - request, success, failure
+5. Configure the request action to saga as mentioned in dashboardSaga.js
+6. The index file of saga will have all action associated with the generator functions to be called. refer saga/index.js
