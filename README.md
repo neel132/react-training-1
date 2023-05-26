@@ -92,3 +92,10 @@ npm i redux-saga
 ### Building the React app
 1. In terminal, run => npm run build
 2. It will create a build folder, which you can use it anywhere for deployment
+
+### Maintaining Environment
+1. Create .env file on root folder (For development, you can add .env.development | For production, you can add .env.production)
+2. Always, remember to prepend variable name with REACT_APP_ (refer .env)
+3. You can read the environment variable using process.env.{your_variable_name} (eg - process.env.REACT_APP_DOMAIN)
+4. Always remember to add .env in gitignore
+

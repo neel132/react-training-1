@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+console.log("DOMAIN => ", process.env.REACT_APP_DOMAIN);
 const axiosInstance = axios.create({
-	baseURL: 'https://646e3d879c677e23218b5a44.mockapi.io/api/v1/',
+	baseURL: process.env.REACT_APP_DOMAIN,
 	timeout: 15000,
 	headers: {},
 });
