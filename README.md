@@ -82,3 +82,9 @@ npm i redux-saga
 4. Create actions related to saga, eg - request, success, failure
 5. Configure the request action to saga as mentioned in dashboardSaga.js
 6. The index file of saga will have all action associated with the generator functions to be called. refer saga/index.js
+
+### Profiling
+1. On chrome dev tools, you need to go to the performance tab and you need to start the recording.
+2. Stop the recording once the page is been loaded
+3. If the scripting time is more, you can make use of console.time('unique_name') & to stop the timer you need to use console.timeEnd('same_name_mentioned_in_console.time')
+4. If you see one of the function takes lot of time, you need to optimise it in order to reduce the scripting time in your performance.

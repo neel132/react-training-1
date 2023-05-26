@@ -10,6 +10,9 @@ const dashboardSlice = createSlice({
   name: 'dashboard',
   initialState,
   reducers: {
+		updateData: (state, action) => {
+			state.data = action.payload.data;
+		},
     requestDashboard: (state) => {
 			state.loading = true;
 			console.log("Requesting dashboard data action...");
