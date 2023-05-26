@@ -88,3 +88,7 @@ npm i redux-saga
 2. Stop the recording once the page is been loaded
 3. If the scripting time is more, you can make use of console.time('unique_name') & to stop the timer you need to use console.timeEnd('same_name_mentioned_in_console.time')
 4. If you see one of the function takes lot of time, you need to optimise it in order to reduce the scripting time in your performance.
+
+### Building the React app
+1. In terminal, run => npm run build
+2. It will create a build folder, which you can use it anywhere for deployment
